@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tribute Page - Roger Federer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<script src="https://kit.fontawesome.com/2e918371a2.js"></script>
+	</head>
+	<body>
+		<!--Beginning of the visual content of the document -->
+		<!-- here the navigation bar -->
+		<header>
+			<nav class="navigation">
+				<a href="#accueil" class="links">Accueil</a>
+				<a href="#biographie" class="links">Biographie</a>
+				<a href="#carriere" class="links">Carrière</a>
+				<a href="#palmares" class="links">Palmarès</a>
+				<!-- <a href="#info" class="links">Plus d'info</a> -->
+			</nav>
+			<span class="openbtn" onclick="openNav()">&#9776; </span>
+			<nav id="myNav" class="overlay">
+				<a href="javascript:;" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a href="#accueil" onclick="closeNav()">Accueil</a>
+					<a href="#biographie" onclick="closeNav()">Biographie</a>
+					<a href="#carriere" onclick="closeNav()">Carrière</a>
+					<a href="#palmares" onclick="closeNav()">Palmarès</a>
+					<!-- <a href="#info" onclick="closeNav()">Plus d'info</a> -->
+				</div>
+			</nav>
+		</header>
+		<!-- main information -->
+		<main id="accueil">
+			<!-- Hero image -->
+			<section class="img-div">
+				<div class="text">
+					<h1 class="title">Roger Federer</h1>
+					<p class="img-caption">Joueur de tennis</p>
+				</div>
+			</section>
+			<!-- Biographie information -->
+			<section id="biographie">
+				<h2>Biographie</h2>
+				<div class="tribute-info">
+					<img src="assets/rogerf_bio.jpg" alt="Image Roger Federer" />
+					<p>
+						Roger Federer est né le 8 août 1981 à Bâle d'un père suisse, Robert,
+                        et d'une mère sud-africaine d'origine franco-néerlandaise, Lynette Durand.
+                        Tous deux ont travaillé dans la société pharmaceutique Ciba et se sont rencontrés
+                        en 1970 dans sa principale usine à Johannesburg où ils jouaient régulièrement au
+                        tennis dans le club suisse de la métropole sud-africaine. En 1973, ils se marient
+                        et s'installent en Suisse. Avec sa sœur aînée Diana née vingt mois plus tôt,
+                        Roger a grandi à Münchenstein en Suisse alémanique non loin de Bâle et des frontières
+                        allemande et française.<br>
+						<a
+							id="tribute-img"
+							href="https://fr.wikipedia.org/wiki/Roger_Federer"
+							title="Biographie Roger Federer"
+							target="_blank"
+							>En savoir plus sur Roger Federer...
+                        </a>
+					</p>
+				</div>
+			</section>
+			<!-- Carriere information -->
+			<section id="carriere" class="parallax">
+				<h2>Quelques étapes de sa carrière</h2>
+				<div class="stages">
+					<div class="stages-left">
+                        <ul>
+                            <li><strong>1989 - 1995 :</strong> débuts au TC Old Boys de Bâle</li>
+                            <li><strong>1995 - 1997 :</strong> perfectionnement au Centre national suisse de tennis et intégration du circuit junior ITF</li>
+                            <li><strong>1998 :</strong> champion du monde junior, Wimbledon en simple et en double garçons, Orange Bowl</li>
+						    <li><strong>1998 :</strong> premiers matchs sur le circuit ATP</li>
+                            <li><strong>2001 :</strong> premier titre ATP et victoire en Hopman Cup</li>
+                            <li><strong>2003 :</strong> premier sacre en Grand Chelem et vainqueur à la Masters Cup</li>
+                            <li><strong>2009 :</strong> Grand Chelem en carrière et record de titres en Grand Chelem</li>
+                            <li><strong>2011 :</strong> début de saison difficile, finale à Roland-Garros et record de victoires au Masters</li>
+                        </ul>
+					</div>
+					<div class="stages-right">
+						<ul>
+                            <li><strong>2012 :</strong> 7e Wimbledon, vice-champion olympique en simple et record de semaines à la place de no 1 mondial</li>
+                            <li><strong>2013 - 2016 :</strong> années sans titre majeur</li>
+                            <li><strong>2017 : </strong> deux titres en Grand Chelem et n° 2 mondial</li>
+                            <li><strong>2018 :</strong> 20e titre en Grand Chelem et retour à la 1re place mondiale</li>
+                            <li><strong>2019 :</strong> 100e titre ATP, 12e finale à Wimbledon et demi-finale à Roland-Garros</li>
+						    <li><strong>2020 :</strong> 1/2 finale à l'Open d'Australie puis saison écourtée</li>
+                            <li><strong>2021 :</strong> bref retour à la compétition et blessure, 1250e victoire en carrière</li>
+                            <li><strong>2022 :</strong> convalescence et retraite &#x1F622;</li>
+                        </ul>
+					</div>
+				</div>
+			</section>
+			<!-- Palmarès information -->
+			<section id="palmares">
+				<h2>Palmarès</h2>
+                <!-- <p>Roger Federer comptabilise <strong>103</strong> titres dont <strong>28</strong> en Masters Series</p> -->
+				<div class="row">
+					<div class="palmares-card">
+						<img src="assets/rogerf_oa.jpg" alt="Roger Federer Open Australie" />
+						<div class="palmares-text">
+							<p>Open Australie : 6 titres</p>
+							<p>Année(s) : 2004, 2006, 2007, 2010, 2017, 2018</p>
+						</div>
+					</div>
+					<div class="palmares-card">
+						<img src="assets/rogerf_rg.jpg" alt="Roger Federer Roland-Garros" />
+						<div class="palmares-text">
+							<p>Roland-Garros : 1 titre</p>
+							<p>Année(s) : 2009</p>
+						</div>
+					</div>
+					<div class="palmares-card">
+						<img src="assets/rogerf_usopen.jpg" alt="Roger Federer US Open" />
+						<div class="palmares-text">
+							<p>US Open : 5 titres</p>
+							<p>Année(s) : 2004, 2005, 2006, 2007, 2008</p>
+						</div>
+					</div>
+					<div class="palmares-card">
+						<img src="assets/rogerf_wim.jpg" alt="Roger Federer Wimbledon" />
+						<div class="palmares-text">
+							<p>Wimbledon : 8 titres</p>
+							<p>Année(s) : 2003, 2004, 2005, 2006, 2007, 2009, 2012, 2017 </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- More information in external links -->
+			<section id="info">
+				<h2>Plus d'information</h2>
+				<div class="content-logos">
+					<!-- <div class="logo">
+						<a
+							id="tribute-link"
+							href="https://fr.wikipedia.org/wiki/Roger_Federer"
+							title="Roger Federer Biographie"
+							target="_blank"
+						><i class="fab fa-wikipedia-w" style="font-size: 38px; color: #fff;"></i>
+                        </a>
+					</div> -->
+					<div class="logo">
+						<a
+							href="https://www.instagram.com/rogerfederer/"
+							title="Roger Federer Instagram"
+							target="_blank"
+						><i class="fab fa-instagram" style="font-size: 38px;"></i>
+                        </a>
+					</div>
+					<div class="logo">
+						<a
+							href="https://www.facebook.com/Federer/"
+							title="Roger Federer Facebook"
+						><i class="fab fa-facebook" style="font-size: 38px; color: #4267B2;"></i>
+                        </a>
+					</div>
+                    <div class="logo">
+						<a
+							href="https://twitter.com/rogerfederer"
+							title="Roger Federer Twitter"
+						><i class="fab fa-twitter" style="font-size: 38px; color: #1DA1F2;"></i>
+                        </a>
+					</div>
+					<div class="logo">
+						<a
+							href="https://www.youtube.com/@rogerfederer"
+							title="Roger Federer YouTube"
+						><i class="fab fa-youtube" style="font-size: 38px; color: #FF0000;"></i>
+                        </a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer  -->
+		<footer>
+			<p>
+				&copy; 2022 Roger Federer &bull;
+				<a href="#">Tribute</a>
+			</p>
+		</footer>
+
+		<script>
+			function openNav() {
+				document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+				document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+	</body>
+</html>
